@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>education</title>
+	<meta name="viewport" content="width=device-width">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/all.css') }}" />
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/all.min.css') }}" />
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/lightbox.css') }}" />
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/flexslider.css') }}"/>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/owl.carousel.css') }}"/>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/owl.theme.default.css') }}" />
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/jquery.rateyo.css') }}" />
+	<!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='stylesheets/all.css') }}" /"../static/css/jquery.mmenu.all.css" /> -->
+	<!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='stylesheets/all.css') }}" /"../static/css/meanmenu.min.css"> -->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/inner-page-style.css') }}" />
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700" rel="stylesheet">
+</head>
+<body>
+	<div id="page" class="site" itemscope itemtype="http://schema.org/LocalBusiness">
+		<header class="site-header">
+			<div class="top-header">
+			<div class="main-header">
+				<div class="container">
+					<div class="logo-wrap" itemprop="logo">
+						<img src="{{ url_for('static', filename='images/site-logo.jpg') }}" alt="Logo Image">
+						<!-- <h1>Education</h1> -->
+					</div>
+					<div class="nav-wrap">
+						<nav class="nav-desktop">
+							<ul class="menu-list">
+								<li><a href="{{url_for('index')}}">Home</a></li>
+								<li><a href="{{url_for('contact')}}">Contact</li>
+								<li><a href="">Phone</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- Header Close -->
+		<div class="banner">
+			<div class="container" itemprop="description">
+				<h2 style="color:goldenrod; font-size:38px;font-weight: bold; text-align:center;background-color: azure;">Welcome to Government College of Engineering, Tirunelveli</h1>
+			</div>
+		</div>
+		
+		<div class="page-heading">
+			<div class="container" >
+				<h2 align="center">Student Assesment Web Portal</h2>
+				<h2 align="center">LOGIN</h2>
+			</div>
+		</div>
+		<!-- Popular courses End -->
+		<div class="learn-courses">
+			<div class="container">
+				<div class="courses">
+					<div class="owl-one owl-carousel" >
+						<div class="box-wrap" itemprop="event" itemscope itemtype=" http://schema.org/Course">
+							 <div class="img-wrap" itemprop="image"><img src="{{ url_for('static', filename='images/loginn1.jpg') }}" width="150px" ></div>
+								<h3><a href="{{url_for('login_new')}}" class="learn-desining-banner" itemprop="name">Student <br> LOGIN>>></a></h3>
+						
+						</div>
+
+						<div class="box-wrap" itemprop="event" itemscope itemtype=" http://schema.org/Course">
+							 <div class="img-wrap"  itemprop="image"><img src="{{ url_for('static', filename='images/loginn1.jpg') }}"></div> 
+								<a href="{{url_for('login_new')}}" class="learn-desining-banner" itemprop="name">Professor <br> LOGIN >>></a>
+						</div>
+
+						<div class="box-wrap" itemprop="event" itemscope itemtype=" http://schema.org/Course">
+							<div class="img-wrap"  itemprop="image"><img src="{{ url_for('static', filename='images/loginn1.jpg') }}"></div> 
+								<a href="{{url_for('login_new')}}" class="learn-desining-banner" itemprop="name">Admin <br> LOGIN>>></a>
+						</div>
+
+	
+					</div>
+				</div>
+			</div>
+		</div>
+
+		</section>
+		<!-- End of Others talk -->
+
+
+		<!-- Latest News CLosed -->
+		<section class="query-section">
+			<div class="container">
+				<p>Any Queries? Ask us a question at<a href="tel:+9779813639131"><i class="fas fa-phone"></i> +977 9813639131</a></p>
+			</div>
+		</section>
+		<!-- End of Query Section -->	
+
+	
+
+	</div>
+	<script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.3.1.min.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='js/lightbox.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='js/all.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='js/isotope.pkgd.min.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='js/owl.carousel.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='js/jquery.flexslider.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='js/jquery.rateyo.js') }}"></script>
+	<!-- <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.mmenu.all.js') }}"></script> -->
+	<!-- <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.meanmenu.min.js') }}"></script> -->
+	<script type="text/javascript" src="{{ url_for('static', filename='js/custom.js') }}"></script>
+</body>
+</html>

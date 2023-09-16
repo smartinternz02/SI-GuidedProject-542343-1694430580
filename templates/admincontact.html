@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>education</title>
+	<meta name="viewport" content="width=device-width">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/all.css') }}" />
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/all.min.css') }}" />
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/lightbox.css') }}" />
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/flexslider.css') }}"/>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/owl.carousel.css') }}"/>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/owl.theme.default.css') }}" />
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/jquery.rateyo.css') }}" />
+	<!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='stylesheets/all.css') }}" /"../static/css/jquery.mmenu.all.css" /> -->
+	<!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='stylesheets/all.css') }}" /"../static/css/meanmenu.min.css"> -->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/inner-page-style.css') }}" />
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700" rel="stylesheet">
+</head>
+<body>
+	<div id="page" class="site" itemscope itemtype="http://schema.org/LocalBusiness">
+		<header class="site-header">
+			<div class="top-header">
+				<!-- <div class="container">
+					
+					<div class="top-header-right">
+						<div class="social-block">
+							<ul class="social-list">
+								<li><a href=""><i class="fab fa-viber"></i></a></li>
+								<li><a href=""><i class="fab fa-google-plus-g"></i></a></li>
+								<li><a href=""><i class="fab fa-facebook-square"></i></a></li>
+								<li><a href=""><i class="fab fa-facebook-messenger"></i></a></li>
+								<li><a href=""><i class="fab fa-twitter"></i></a></li>
+								<li><a href=""><i class="fab fa-skype"></i></a></li>
+							</ul>
+						</div>
+						<div class="login-block">
+							<a href=""{{url_for('login_new')}}">Login </a>
+						</div>
+					</div>
+				</div>
+			</div> -->
+			<!-- Top header Close -->
+			<div class="main-header">
+				<div class="container">
+					<div class="logo-wrap" itemprop="logo">
+						<img src="{{ url_for('static', filename='images/site-logo.jpg') }}" alt="Logo Image">
+						<!-- <h1>Education</h1> -->
+					</div>
+					<div class="nav-wrap">
+						<nav class="nav-desktop">
+							<ul class="menu-list">
+								<li><a href="{{url_for('index')}}">Home</a></li>
+								<li><a href="{{url_for('contact')}}">Contact</li>
+								<li><a href="">Phone</a></li>
+							</ul>
+						</nav>
+						
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- Header Close -->
+		<div class="banner">
+		
+			<div class="container" itemprop="description">
+				<h2 style="color:goldenrod; font-size:38px;font-weight: bold; text-align:center">Welcome to Government College of Engineering, Tirunelveli</h1>
+			</div>
+		</div>
+		
+		<div class="page-heading">
+			<div class="container" >
+				<h2 align="center">Student Assesment Web Portal</h2>
+			</div>
+		</div>
+		<!-- Popular courses End -->
+		<section class="contact-page-section">
+			<div class="container">
+				<div class="contact-info">
+					<div class="img-wrap" itemprop="image"><img src="{{ url_for('static', filename='images/admin_img.png') }}" width="200px" height="50px"></div>
+					<h3 style="font-size: large;align-content:center: rgb(4, 13, 21);">ADMIN</h3>
+					<h3 style="font-size: large;color: aliceblue;">	<a href="{{url_for('aprofile')}}">Admin Profile</a> </h3>
+					<h3 style="font-size: large;color: aliceblue;">	<a href="{{url_for('signup')}}">Register</a></h3>
+					<h3 style="font-size: large;color: aliceblue;">	<a href="{{url_for('logout')}}">Logout</a></h3>
+				</div>
+				<div class="people-info-wrap">
+					<h2>ADMIN CONTACT</h2>
+					<ul class="contact-list">
+						<li> 
+							<span>
+								<h3> NAME {{username}}</h3>
+							</span>
+						</li>
+						<li>
+							<span> 
+								<h3>EMAIL:{{email}}</h3>
+							</span>
+						</li>
+						<li>
+							<span>
+								<h3>USER NAME:{{username}}</h3>
+							</span>
+						</li>
+					</ul>
+				
+				</div>  
+			</div>
+		</section>
+		
+		<!-- Latest News CLosed -->
+		<section class="query-section">
+			<div class="container">
+				<p>Any Queries? Ask us a question at helpsupport@gcetly.ac.in</p>
+			</div>
+		</section>
+		<!-- End of Others talk -->	
+	
+
+	</div>
+	<script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.3.1.min.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='js/lightbox.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='js/all.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='js/isotope.pkgd.min.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='js/owl.carousel.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='js/jquery.flexslider.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='js/jquery.rateyo.js') }}"></script>
+	<!-- <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.mmenu.all.js') }}"></script> -->
+	<!-- <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.meanmenu.min.js') }}"></script> -->
+	<script type="text/javascript" src="{{ url_for('static', filename='js/custom.js') }}"></script>
+</body>
+</html>
